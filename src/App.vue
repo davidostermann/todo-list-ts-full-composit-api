@@ -1,20 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <h2>Tags inlined</h2>
+    <tags3x-inline />
+    <hr />
+    <h2>Tags stacked</h2>
+    <tags3x />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import tags3x from "./components/tags3x.vue";
+import tags3xInline from "./components/tags3xInline.vue";
 
-export default Vue.extend({
-  name: "app",
+export default {
+  name: "App",
   components: {
-    HelloWorld
+    tags3x,
+    tags3xInline
   }
-});
+};
 </script>
 
 <style>
